@@ -1,0 +1,35 @@
+CREATE DATABASE Air;
+
+USE Air;
+
+CREATE TABLE login (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    person VARCHAR(50) NOT NULL
+);
+
+select * from login;
+
+CREATE TABLE tickets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    destination VARCHAR(255) NOT NULL,
+    date DATE NOT NULL
+);
+
+
+select * from tickets;
+
+
+CREATE TABLE flights (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    flight_number VARCHAR(20) NOT NULL,
+    departure VARCHAR(100) NOT NULL,
+    destination VARCHAR(100) NOT NULL,
+    departure_time TIME NOT NULL,
+    arrival_time TIME NOT NULL
+);
+select * from flights;
+
+select * from tickets;
